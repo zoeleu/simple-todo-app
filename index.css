@@ -1,0 +1,51 @@
+* {
+  font-family: -apple-system, system-ui;
+  margin: 0.4rem;
+}
+body {
+  font-family: -apple-system, system-ui;
+}
+body h1 {
+  font-size: 2rem;
+}
+body div#todo-tasks-container {
+  display: flex;
+  flex-direction: column;
+}
+body div#todo-tasks-container div.task-container {
+  display: flex;
+  flex-direction: row;
+}
+body div#todo-tasks-container div.task-container.task-removed {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+body div#todo-tasks-container div.task-container h2.task-description {
+  font-size: 1rem;
+  font-weight: normal;
+}
+body div#todo-tasks-container div.task-container input[type=checkbox] {
+  transform: scale(1.5);
+}
+body div#todo-add-task-container {
+  display: flex;
+}
+body input#input-task,
+body button {
+  border: 0px none #FFF;
+  border-radius: 1rem;
+  background-color: #ececec;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+body input#input-task:hover,
+body button:hover {
+  background-color: #dddddd;
+}
+body input#input-task:focus,
+body button:focus {
+  outline: none;
+  background-color: #d0d0d0;
+}
+/*# sourceMappingURL=index.css.map */
